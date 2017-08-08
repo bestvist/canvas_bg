@@ -113,8 +113,8 @@
 
     canvas.addEventListener('mousemove', function (e) {
         e = e || window.event;
-        circle.x = e.pageX - 10;
-        circle.y = e.pageY - 10;
+        circle.x = e.offsetX;
+        circle.y = e.offsetY;
     });
 
     canvas.addEventListener('mouseout', function (e) {
